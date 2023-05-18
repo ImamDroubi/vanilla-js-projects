@@ -1,0 +1,77 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+background : #003049
+red : #D62828
+orange : #F77F00
+yellow : #FCBF49
+wheat : #EAE2B7
+*/
+:root{
+    --bg-color : #003049;
+    --wrong-color : #D62828;
+    --txt-color : #054263;
+    --correct-color:#F77F00;
+    --wheat-color:#EAE2B7;
+    --typed-color:#FCBF49;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--correct-color);
+    
+}
+h1{
+    margin: 2em 0 0.5em 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-size: 1.2rem;
+}
+.container{
+    margin-top: 4em;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 20em;
+}
+.slide .icon svg{
+    width: 2em;
+    height: 2em;
+}
+.slider input{
+    appearance: none;
+    width: 20em;
+    transform: rotate(-90deg);
+    background-color: var(--txt-color);
+    height: 2em;
+    
+    border-radius: 5px;
+    opacity: 75%;
+    cursor: pointer;
+}
+.slide input:hover{
+    opacity: 1;
+}
+.slide input::-webkit-slider-thumb{
+    appearance: none;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--correct-color);
+}

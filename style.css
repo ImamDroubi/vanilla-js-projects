@@ -1,0 +1,74 @@
+:root{
+  --bg-color : #003049;
+  --wrong-color : #D62828;
+  --txt-color : #054263;
+  --correct-color:#F77F00;
+  --wheat-color:#EAE2B7;
+  --typed-color:#FCBF49;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--bg-color);
+  color: var(--correct-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+  margin: 5rem;
+}
+.blocks{
+  height: 50vh;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+.block{
+  width: 12rem;
+  height:12rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.block:hover{
+  background-color: var(--txt-color);
+}
+.block img{
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+.contact{
+  width: 50%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.contact div{
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.contact img{
+  width: 1.5rem;
+  margin-right: 0.2rem;
+}
+.contact a{
+  color: var(--correct-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.contact a:hover{
+  text-decoration: underline;
+}
